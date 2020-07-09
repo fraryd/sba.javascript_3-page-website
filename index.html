@@ -10,6 +10,13 @@
 
 <link href="css/style.css" rel="stylesheet" type="text/css">
 
+<script type="text/javascript">
+
+  function setImage(select) {
+      selectedvalue=select.value;
+  }
+</script>
+
 <style>
   p{
   font-size: large;
@@ -27,10 +34,10 @@
     <h2 style="color: black;">Lego Projects</h2>
     <br>
     <p>One of the many lego projects you can do is the Millenium Falcon.  Down below is a great photo of a completed project.  
-      <br>
-      <br>
-      </p>
-      <br>
+    </p>
+    <br>
+    <br>
+
       <h4>Millenium Falcon</h4>
       <br>
       <p style='width: 720px;'>
@@ -40,7 +47,14 @@
       smuggler circles and is coveted by many for being the fastest hunk of junk in the galaxy.  
       It is also fabled to be involved with the rebel alliance.
       <br>
-      <img src="img/Falcon.png" alt="Millenium Falcon" width="720" height="540">
+      <img src="img/Falcon.png" alt="Millenium Falcon" width="720" height="540">      
+
+        <select id="shipDropdown" onchange="setImage();">
+          <option value="/img/Falcon.png">External View</option>
+          <option value="/img/FalconInternal.png">Internal View</option>
+        </select>
+        <input type="submit" value="Submit">
+
       <br>
       </p>
   </div>
