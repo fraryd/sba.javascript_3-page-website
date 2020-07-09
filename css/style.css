@@ -1,9 +1,94 @@
-body {
-    background-color: navy;
+html, body, div{
+  height: 100%;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  overflow-x:hidden;
+  word-wrap:break-word;
 }
 
 
-object {
-    height: 100vh;
-    width: 100vh;
+nav{
+  float: left;
+  display: block;
+  color: black;
+  text-align: left;
+  text-decoration: none;
+}
+
+a:link, a:visited {
+  background-color: lightblue;
+  color: black;
+  padding: 4px 4px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+a:hover, a:active {
+  background-color:  lightgray;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.Falcon {
+  width: 100%;
+  max-width: 160px;
+  height: auto;
+}
+
+/* columns */
+.column1 {
+  top: 0%;
+  left: 0%;
+  float: left;
+  width: 80%;
+  height: 100%;
+  text-align: left;
+  padding: 20px 10%;
+}
+
+.column2 {
+  top: 0%;
+  right: 0%;
+  position: fixed;
+  float: right;
+  background-color: lightgray;
+  width: 20%;
+  height: 55%;
+  text-align: left;
+  padding: 20px 2%;
+}
+
+.column3 {
+  top: 55%;
+  right: 0%;
+  position: fixed;
+  float: right;
+  background-color: gray;
+  width: 20%;
+  height: 100%;
+  text-align: left;
+  padding: 20px 2%;
+}
+
+/* clears floats after columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* mobile */
+@media only screen and (max-width:720px) {
+  .column1, .column2, .column3 {
+    top:0%;
+    left:0%; 
+    width:100%;
+    position: static;
+    padding: 5% 5%;
+    display: inline-table;
+  }
 }
