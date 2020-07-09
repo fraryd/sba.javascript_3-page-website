@@ -5,17 +5,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
+
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
+<script type="text/javascript" src="./js/external-javascript.js"></script>
 <link href="css/style.css" rel="stylesheet" type="text/css">
 
-<script type="text/javascript">
-
-  function setImage(select) {
-      selectedvalue=select.value;
-  }
-</script>
 
 <style>
   p{
@@ -33,29 +30,29 @@
   <div class="column1" >
     <h2 style="color: black;">Lego Projects</h2>
     <br>
-    <p>One of the many lego projects you can do is the Millenium Falcon.  Down below is a great photo of a completed project.  
+    <p style='max-width: 720px;'>One of the many lego projects you can do is the Millenium Falcon.  Down below is a great photo of a completed project.  
     </p>
-    <br>
     <br>
 
       <h4>Millenium Falcon</h4>
       <br>
-      <p style='width: 720px;'>
+      <p style='max-width: 720px;'>
       Corellian Light Freighter
       <br>
       An extensively modified Corellian light freighter, the Millennium Falcon is a legend in 
       smuggler circles and is coveted by many for being the fastest hunk of junk in the galaxy.  
       It is also fabled to be involved with the rebel alliance.
       <br>
-      <img src="img/Falcon.png" alt="Millenium Falcon" width="720" height="540">      
-
-        <select id="shipDropdown" onchange="setImage();">
-          <option value="/img/Falcon.png">External View</option>
-          <option value="/img/FalconInternal.png">Internal View</option>
+      <img id="shipViews" src="img/Falcon.png" alt="Millenium Falcon" width="720" height="540"/>
+      <form name = "shipsDropdown">
+        <select name="shipList" onchange="setImage(this);">
+          <option value="img/Falcon.png">External View</option>
+          <option value="img/FalconInternal.png">Internal View</option>
         </select>
-        <input type="submit" value="Submit">
+      </form>
 
       <br>
+
       </p>
   </div>
 
@@ -76,11 +73,14 @@
  <br>
 <nav>
   <ul style="list-style-type:none;">
+  <!-- <li>
+    <h2><a href="index.html">Home</a></h2>
+  </li> -->
   <li>
-    <h2><a href="Page2.html" target="_blank">Page 2</a></h2>
+    <h2><a href="Page2.html">Page 2</a></h2>
   </li>
   <li>
-    <h2><a href="Page3.html" target="_blank">Page 3</a></h2>
+    <h2><a href="Page3.html">Page 3</a></h2>
   </li>
 </ul>
 </nav>
