@@ -6,6 +6,10 @@ html, body, div{
   word-wrap:break-word;
 }
 
+table, th, td {
+  border: 1px solid black;
+  padding: 10px;
+}
 
 nav{
   float: left;

@@ -3,7 +3,8 @@
 
 
 ### Description
-* This is a site that just let's the user see different lego models.
+* This site allows users to view Lego models, color options and contact support.
+* The site is also mobile friendly. 
 
 
 * Source:
