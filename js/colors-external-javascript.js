@@ -18,6 +18,7 @@ while (userInput = prompt ("Enter a number between 1 and 3:")){
   if (isNaN(userInput) || userInput < 1 || userInput > 3){
     alert ("Re-enter number between 1 and 3:");
   } else if (userInput == 3){
+        
     alert ("Winner winner chicken dinner!");
     break;
   }
